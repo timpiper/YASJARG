@@ -37,12 +37,14 @@
     <Reference Include="System.Drawing" />
     <Reference Include="MonoMac" />
     <Reference Include="MonoGame.Framework.MacOS">
-      <HintPath>..\..\..\..\..\Network\Servers\bigmac.mi.ecs.hs-osnabrueck.de\Volumes\home\timpiper\Projects\MonoGame\MonoGame.Framework\bin\Debug\MonoGame.Framework.MacOS.dll</HintPath>
+      <HintPath>..\..\..\MonoGame\MonoGame\MonoGame.Framework\bin\Debug\MonoGame.Framework.MacOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Tile Engine">
+      <HintPath>..\..\..\MonoGame\MonoGame\MonoGame.Framework\bin\Debug\Tile Engine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
-    <None Include="Content\Textures\background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Mono\MonoMac\v0.0\Mono.MonoMac.targets" />
@@ -66,14 +68,9 @@
     <Content Include="Content\Music\jump.mp3" />
     <Content Include="Content\Music\bg_music.mp3" />
     <Content Include="Content\Textures\startscreen.jpg" />
+    <Content Include="Content\Textures\background.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Fonts\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\MacOS\BookSourceCode\XNAGameDevelopmentbyExampleCode\GemstoneHunter\TileEngine\Tile Engine.csproj">
-      <Project>{521972FD-1A9B-4CFD-A435-EB2224985131}</Project>
-      <Name>Tile Engine</Name>
-    </ProjectReference>
   </ItemGroup>
 </Project>
